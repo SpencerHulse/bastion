@@ -1,11 +1,11 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Homepage from "./pages/homepage";
+import MainMenu from "./pages/main-menu";
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Homepage />} />
+        <Route path="/" element={<MainMenu />} />
       </Routes>
     </Router>
   );

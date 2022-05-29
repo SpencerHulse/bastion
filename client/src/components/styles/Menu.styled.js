@@ -2,6 +2,7 @@ import styled from "styled-components";
 const elementWidth = 300;
 
 export const MenuContainer = styled.div`
+  background-color: beige;
   text-align: center;
   max-width: 100%;
   height: 100vh;
@@ -32,5 +33,10 @@ export const MenuItem = styled.li`
   width: 200px;
   padding: 15px;
   margin: 5px auto;
-  background-color: beige;
+  background-color: #e2e299;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #d8d89e;
+  }
 `;
