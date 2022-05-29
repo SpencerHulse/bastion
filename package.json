@@ -1,0 +1,27 @@
+{
+  "name": "bastion",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "build": "cd client && npm run build",
+    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "seed": "cd server && npm run seed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SpencerHulse/bastion.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SpencerHulse/bastion/issues"
+  },
+  "homepage": "https://github.com/SpencerHulse/bastion#readme",
+  "dependencies": {
+    "concurrently": "^7.2.1"
+  }
+}
